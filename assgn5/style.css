@@ -64,32 +64,33 @@ h3{
 
 .title4{
 	border: 10px solid #833B3B;
-  margin: 35px;
+  margin: "auto";
   display: inline-block;
 	float: left;
 }
 .title5{
 
-  margin: 35px;
+  margin: "auto";
   display: inline-block;
 	float: left;
-	font-size: 60px;
+	font-size: 55px;
 	height: 1px;
 	line-height:1px;
+	padding:30px;
 }
 .title6{
 
-  margin: 35px;
+  margin: "auto";
   display: inline-block;
 	float: left;
-	font-size: 40px;
+	font-size: 35px;
 	padding-right:180px;
 	height: 1px;
 	line-height: 10px;
 }
 .title7{
 
-   margin: 35px;
+   margin: "auto";
   display: inline-block;
 	float: left;
 	font-size: 45px;
@@ -97,7 +98,7 @@ h3{
 	line-height: 1px;
 }
 .title8{
- margin: 0px;
+ margin: "auto";
   display: inline-block;
 	float: left;
 	font-size: 40px;
@@ -106,7 +107,7 @@ h3{
 	
 }
 .title9{
-  margin: 0px;
+  margin: "auto";
   display: inline-block;
 	float: left;
 	font-size: 40px;
