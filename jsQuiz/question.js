@@ -4,6 +4,8 @@ class Question {
     this.choices = choices;
     this.answer = answer;
 }
+var quiz = new Quiz(questions);
+populate();
 }
 new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML")
 
@@ -61,6 +63,5 @@ function populate() {
  
     
 };
-var quiz = new Quiz(questions);
-populate();
+
 
