@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+ a:hover, a:focus, a:active, a{
+      text-decoration: none;
+      color: inherit;
+}
+header{
+	font-family: 'Emilys Candy', cursive;
+	font-size: 40px;
+}
+h1{
+	font-family: 'Emilys Candy', cursive; display:inline-block;
+	height: 5px;
+}
+h2{
+	  color: #E46C2B;
+  font-family: 'Emilys Candy', cursive;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+	
+}
+h3{
+	color: #E46C2B;
+  font-family: 'Emilys Candy', cursive;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px;
+	
+	
+}
+.details{
+	align-content: center;
+	
+}
+.picture{
+	text-align:left;
+	padding: inherit;
+	display: inline-block;
+	
+	
+}
+.picture2{
+	text-align:left;
+	padding: 50px;
+	line-height:1px;
+	height: 10px;
+}
+.title{
+	display:inline-block; float: left;  width:350px; padding-right: 30px; text-decoration: none;padding: 30px;
+}
+.title2{
+	 display:inline-block; float:left; width:200px; background-color: #E46C2B; padding: 30px;
+	color: #833B3B; text-decoration: none; text-align: center;
+}
+.title3{
+	 display:inline-block; float: left; width:200px; background-color: #833B3B; padding: 30px;
+	color: #E46C2B; text-decoration: none; text-align: center;
+}
+
+.title4{
+	border: 10px solid #833B3B;
+  margin: 35px;
+  display: inline-block;
+	float: left;
+}
+.title5{
+
+  margin: 35px;
+  display: inline-block;
+	float: left;
+	font-size: 60px;
+	height: 1px;
+	line-height:1px;
+}
+.title6{
+
+  margin: 35px;
+  display: inline-block;
+	float: left;
+	font-size: 40px;
+	padding-right:180px;
+	height: 1px;
+	line-height: 10px;
+}
+.title7{
+
+   margin: 35px;
+  display: inline-block;
+	float: left;
+	font-size: 45px;
+	height: 1px;
+	line-height: 1px;
+}
+.title8{
+ margin: 0px;
+  display: inline-block;
+	float: left;
+	font-size: 40px;
+	padding-right:180px;
+	background-color: #833B3B 
+	
+}
+.title9{
+  margin: 0px;
+  display: inline-block;
+	float: left;
+	font-size: 40px;
+	padding-right:50px;
+	background-color: #E46C2B
+}
+.title2:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
+.title3:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
+.title4:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
+.title5:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
+.title9:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
