@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Used to remove the blue text for links to other pages */
+ a:hover, a:focus, a:active, a{
+      text-decoration: none;
+      color: inherit;
+}
+
+header{
+	font-family: 'Emilys Candy', cursive;	/* default font*/ 
+	font-size: 40px;
+}
+h1{
+	font-family: 'Emilys Candy', cursive; 
+	display:inline-block;
+	height: 5px;	/* tried changing the heigh to be less for better allignment */
+}
+
+.details{align-content: center; }
+/* class for images and allignment */
+.picture{
+	text-align:left;
+	padding: inherit;
+	display: inline-block;
+}
+/* class for different types of images, mainly testing */
+.picture2{
+	text-align:left;
+	padding: 50px;
+	line-height:1px;
+	height: 10px;
+}
+/* unboxed and in-line text, used for Bun Bun Bakeshop */
+.title{
+	display:inline-block; 
+	float: left;  
+	width:350px; 
+	padding-right: 30px; 
+	text-decoration: none;
+	padding: 30px;
+}
+/* boxed text for 'Home' and 'Cart' in ribbon*/
+.title2{
+	 display:inline-block; 
+	float:left; width:200px; 
+	background-color: #E46C2B; 
+	padding: 30px;
+	color: #833B3B; 
+	text-decoration: none; 
+	text-align: center;
+}
+/*boxed text for 'Products' in ribbon*/
+.title3{
+	 display:inline-block; 
+	float: left; 
+	width:200px; 
+	background-color: #833B3B; 
+	padding: 30px;
+	color: #E46C2B; 
+	text-decoration: none; 
+	text-align: center;
+}
+/* used for boxed 'Create Account' and 'Product Details' text on homepage*/
+.title4{
+	border: 10px solid #833B3B;
+  margin: "auto";
+  display: inline-block;
+	float: left;
+	font-family: 'Emilys Candy', cursive;
+	font-size: 40px;
+}
+/*Used for text in products.html, titles of bun types */
+.title5{
+  margin: "auto";
+  display: inline-block;
+	float: left;
+	font-size: 55px;
+	height: 1px;
+	line-height:1px;
+	padding:30px;
+}
+/*Used for drop-down menus, quantity and type of glaze */
+.title6{
+  margin: "auto";
+  display: inline-block;
+	float: left;
+	font-size: 35px;
+	padding-right:180px;
+	height: 1px;
+	line-height: 10px;
+}
+/*Used for add to cart text*/
+.title8{
+ margin: "auto";
+  display: inline-block;
+	float: left;
+	font-size: 40px;
+	padding-right:180px;
+	background-color: #833B3B 	
+}
+/*Used for remove from cart text*/
+.title9{
+  margin: "auto";
+  display: inline-block;
+	float: left;
+	font-size: 40px;
+	padding-right:50px;
+	background-color: #E46C2B
+}
+/*Creates red overlay when moused over*/
+.title2:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
+/*Creates red overlay when moused over*/
+.title3:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
+/*Creates red overlay when moused over*/
+.title4:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
+/*Creates red overlay when moused over*/
+.title5:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
+/*Creates red overlay when moused over*/
+.title9:hover{
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+}
