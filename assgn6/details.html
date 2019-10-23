@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script type="Text/Javascript" src="Assets/script.js"> </script>
+	<link rel="stylesheet" type="text/css" href="Assets/style.css">
+	<!-- using this font like I used in my prototype assignment -->
+	<link href="https://fonts.googleapis.com/css?family=Emilys+Candy&display=swap" rel="stylesheet">
+	<title>details</title>
+</head>
+<body>
+	<header>
+		<!-- using this font like I used in my prototype assignment -->
+		<div class="title"><a href="index.html">Bun Bun Bakeshop</a></div>
+		<div class="title3"><a href="index.html">Home</a></div>
+		<div class="title2"><a href="products.html">Products</a></div>
+		<div class="title3" id="cart"><a href="cart.html">Cart</a><a id="clicks"> (0)</a></div>
+
+	</header>
+	<header>
+		<!-- Original Bun text, this is the product people want details for -->
+		<div class="title1">
+			The Original Bun Bun
+		</div>
+	</header>
+	<h1>
+		<!-- image for the original bun -->
+		<img id="bunImage" src="Assets/bun0.jpg" width="333" height="272" alt="Cinnamon Rolls" align="left">
+		<!-- Placement text for where an actual description would go for product details -->
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		<br><br>
+		<div class="title6">
+			<!-- dropdown menu for type of glaze on details page -->
+			
+			<label for="glaze">Type of Glaze</label>
+			<select id="glazes" name="glaze" onchange="changeImage()">
+				<option value="0">None</option>
+				<option value="1">Sugar-Milk</option>
+				<option value="2">Vanilla-Milk</option>
+				<option value="3">Double Chocolate</option>
+			</select>
+
+		</div>
+		<div class="title6">	
+			<!-- dropdown menu for number of buns straight from details page -->
+			<label for="quantity">Number of Buns</label>
+			<select id="quantity" name="quantity">
+				<option value="1">1</option>
+				<option value="3">3</option>
+				<option value="6">6</option>
+				<option value="12">12</option>
+			</select>
+		</div>	
+		
+			<!-- add to cart and remove from cart button for access straight from page -->
+			<br>
+			<div id="addCart" class="title8" onclick="addItem()">Add to Cart</div>
+			<div class="title9"><a href="products.html">Remove From Cart</a></div>
+	</body>
+	</html>
