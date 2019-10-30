@@ -27,7 +27,8 @@ p img {
 .leftPage{position: left;
 			padding-right: 0;
 		}
-.rightPage{text-align: relative; padding-left:0;}
+
+#rightPage{text-align: relative; padding-left:0;}
 
 
 .details{align-content: center; }

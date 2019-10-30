@@ -8,17 +8,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Emilys+Candy&display=swap" rel="stylesheet">
 	<title>Cart</title>
 </head>
-<body>
+<body onload="loadCart()">
 	<header>
 		<!-- This is the main title ribbon used on all screens -->
 		<div class="title"><a href="index.html">Bun Bun Bakeshop</a></div>
 		<div class="title3"><a href="index.html">Home</a></div>
 		<div class="title2"><a href="products.html">Products</a></div>
-		<div class="title3" id="cart"><a href="cart.html">Cart</a></div>
+		<div class="title3" id="cart"><a href="cart.html">Cart</a><a id="clicks"> (0)</a></div>
 					
 	</header>
 	<h1>
-		
+
 		<p>Shopping Cart</p>
 	</h1>
 	<header>
@@ -31,9 +31,13 @@
 		</div>
 
 		<!-- This will be replaced with actual "BunPurchase" objects in homework 6B, for now placeholders -->
-		<div class="rightPage"> <p><img id="remove" src="Assets/remove.jpeg"> 12 Original Bun - Chocolate Glaze <img id="regular" src="Assets/bun3.jpg"></p>
+		
+		<div id="rightPage"> 
+
+		<!-- <p><img id="remove" src="Assets/remove.jpeg"> 12 Original Bun - Chocolate Glaze <img id="regular" src="Assets/bun3.jpg"></p>
 			<p><img id="remove" src="Assets/remove.jpeg"> 1 Original Bun - Vanilla Glaze <img id="regular" src="Assets/bun2.jpg"></p>
-			<p><img id="remove" src="Assets/remove.jpeg"> 6 Original Bun - No Glaze <img id="regular" src="Assets/bun0.jpg"></p>
+			<p><img id="remove" src="Assets/remove.jpeg"> 6 Original Bun - No Glaze <img id="regular" src="Assets/bun0.jpg"></p> -->
+
 		</div>
 		</div>
 	</header>
