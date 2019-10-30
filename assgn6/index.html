@@ -3,17 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="Assets/style.css">
+	<script type="Text/Javascript" src="Assets/script.js"> </script>
 	<!-- using this font like I used in my prototype assignment -->
 	<link href="https://fonts.googleapis.com/css?family=Emilys+Candy&display=swap" rel="stylesheet">
 	<title>home</title>
 </head>
-<body>
+<body onload="loadCart()">
 	<header>
 		<!-- using this font like I used in my prototype assignment -->
 		<div class="title"><a href="index.html">Bun Bun Bakeshop</a></div>
 		<div class="title3"><a href="index.html">Home</a></div>
 		<div class="title2"><a href="products.html">Products</a></div>
-		<div class="title3"><a href="cart.html">Cart</a></div>
+		<div class="title3" id="cart"><a href="cart.html">Cart</a><a id="clicks"> (0)</a></div>
 	</header>
 	<!-- image for long ribbon on home screen -->
 	<div class="picture"><img src="https://live.staticflickr.com/3171/2598842659_089c977e42_k.jpg" width="1190" height="248" alt="0105 cinnamon rolls"></div>

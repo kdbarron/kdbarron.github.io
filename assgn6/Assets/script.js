@@ -2,7 +2,7 @@
 
 /*This will increment as people add items in the cart*/
 var cartSize = 0;
-
+var bunList = Array();
 class Order{
 	constructor(orderNumber, glaze, quantity){
 		this.glaze = glaze;
@@ -24,8 +24,10 @@ function changeImage(){
 	document.getElementById("bunImage").src = imageList[selectedImage].src;
 }
 function deletion(bunDelete){
-	localStorage.removeItem('bunOrder'+bunDelete);
-	cartSize--;
+	var bunList = Array();
+	bunList = JSON.parse(localStorage.getItem('buns'));
+	bunList.splice(bunDelete, 1);
+	localStorage.setItem('buns', JSON.stringify(bunList));
 	location.reload();
 
 }
@@ -33,60 +35,50 @@ function deletion(bunDelete){
 /*This function increments the number of orders in the shopping cart
 I am counting each order as a single item, so ordering 6 buns still counts as 1 order */
 function addItem() {
+	
 	var bunList = Array();
+	bunList = JSON.parse(localStorage.getItem('buns'));
 	var cartSize = 0;
 	var x = document.getElementById("addCart");
 	var y = document.getElementById("clicks");
 	var glaze = document.getElementById("glazes").value;
 	var quantity = document.getElementById("quantity").value;
-	if(localStorage.length > 0){
-		bunList.push(JSON.parse(localStorage.getItem('buns')));
-	}
 	cartSize = bunList.length;
 	var order = new Order(cartSize, glaze, quantity);
 	bunList.push(order);
 	localStorage.setItem('buns', JSON.stringify(bunList));
 	
-	/*cartSize = localStorage.length;
-	var glaze = document.getElementById("glazes").value;
-	var quantity = document.getElementById("quantity").value;
-
-	var order = new Order(cartSize, glaze, quantity); 
-
-	localStorage.setItem('bunOrder' + cartSize, JSON.stringify(order));
 
 	x.style.color = "red";
 	
 	cartSize++;
 
 	
-	y.innerHTML = "(" + localStorage.length + ")";
+	y.innerHTML = "(" + bunList.length + ")";
 	setTimeout(changeToBlack, 300);
 	function changeToBlack() {
 		x.style.color = "black";
-	}*/
+	}
 	
 }
 function loadCart(){
 	var bunList = Array();
+	if(localStorage.length > 0){
+	bunList = JSON.parse(localStorage.getItem('buns'));
+	console.log(bunList.length);
+	}
 	var newBuns = document.createElement("P");
 	var buns = document.getElementById("rightPage")
+	var y = document.getElementById("clicks");
+	localStorage.setItem('buns', JSON.stringify(bunList));
 
-		var y = document.getElementById("clicks");
+	
+	
+
+	
+	y.innerHTML = "(" + bunList.length + ")";
 		
-
 	
-	
-
-	if(localStorage.length > 0){
-		y.innerHTML = "(" + localStorage.length + ")";
-		for(var i=0; i<localStorage.length; i++){
-			if(localStorage.getItem('bunOrder'+i) != null){
-
-			bunList.push(JSON.parse(localStorage.getItem('bunOrder'+i)));
-
-		}
-		}
 	for(var j=0; j<bunList.length; j++){
 
 	let glaze = 0;
@@ -120,5 +112,3 @@ function loadCart(){
 		document.getElementById("rightPage").appendChild(newBuns+i);
 	}*/
 
-
-}
