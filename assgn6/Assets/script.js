@@ -3,6 +3,9 @@
 /*This will increment as people add items in the cart*/
 var cartSize = 0;
 var bunList = Array();
+
+/*Main class for each bun order. new Order is made each time
+Add to Cart button is pressed */
 class Order{
 	constructor(orderNumber, glaze, quantity){
 		this.glaze = glaze;
