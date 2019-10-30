@@ -10,7 +10,6 @@ class Order{
 		this.orderNumber = orderNumber;
 	}
 }
-
 /*This function changes the image displayed based on glaze choice picked by the user*/
 function changeImage(){
 	var imageList = Array();
@@ -20,18 +19,16 @@ function changeImage(){
 	}
 	var selectedImage = document.getElementById("glazes").value;
 	var currImage = document.getElementById("bunImage").src;
-
 	document.getElementById("bunImage").src = imageList[selectedImage].src;
 }
+/*This function removes the element in the array at index "bunDelete" and updates the localStorage */
 function deletion(bunDelete){
 	var bunList = Array();
 	bunList = JSON.parse(localStorage.getItem('buns'));
 	bunList.splice(bunDelete, 1);
 	localStorage.setItem('buns', JSON.stringify(bunList));
 	location.reload();
-
 }
-
 /*This function increments the number of orders in the shopping cart
 I am counting each order as a single item, so ordering 6 buns still counts as 1 order */
 function addItem() {
@@ -47,20 +44,16 @@ function addItem() {
 	var order = new Order(cartSize, glaze, quantity);
 	bunList.push(order);
 	localStorage.setItem('buns', JSON.stringify(bunList));
-	
-
 	x.style.color = "red";
-	
 	cartSize++;
-
-	
 	y.innerHTML = "(" + bunList.length + ")";
 	setTimeout(changeToBlack, 300);
 	function changeToBlack() {
 		x.style.color = "black";
 	}
-	
 }
+	/* This is the main function of my shopping cart. It populates the cart with
+	the orders the customer has made */
 function loadCart(){
 	var bunList = Array();
 	if(localStorage.length > 0){
@@ -71,16 +64,8 @@ function loadCart(){
 	var buns = document.getElementById("rightPage")
 	var y = document.getElementById("clicks");
 	localStorage.setItem('buns', JSON.stringify(bunList));
-
-	
-	
-
-	
 	y.innerHTML = "(" + bunList.length + ")";
-		
-	
 	for(var j=0; j<bunList.length; j++){
-
 	let glaze = 0;
 	let quantity = 0;	
 	var z = document.createElement('P');
@@ -101,14 +86,6 @@ function loadCart(){
 	+ '<img id="regular" src="Assets/bun' + bunOrder.glaze +'.jpg">';
 	buns.appendChild(z);
 	}	
-			
-	}
-	/*for(int i = 0; i<localStorage.length; i++){
-		bunList[i] = JSON.parse(localStorage.getItem('bunOrder' + i))
-	}
-	for(int i = 0; i<bunList.length; i++){
-		var newBuns+i = document.createElement("P");
-		newBuns+i.innerHTML = bunList[i];
-		document.getElementById("rightPage").appendChild(newBuns+i);
-	}*/
+}
+	
 
