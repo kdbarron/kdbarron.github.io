@@ -22,7 +22,7 @@ function topFunction() {
 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight + 1000);
+  canvas = createCanvas(windowWidth, windowHeight + 1750);
   fill(125);
   noStroke();
   canvas.position(0, 0);
