@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+Define this in your CSS 
+.ease-inAnimation = Replace it by the name you want to give your animation
+.easeinAnimObj = Assign this class to the elements to which you want to apply the animation
+*/
+#myBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: indianred; /* Set a background color */
+color: black; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 15px; /* Increase font size */
+}
+
+#myBtn:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.fadeinAnimObj1 {
+	position: relative;
+	/* Chrome, Safari*/
+	-webkit-animation-name: fadein;
+	-webkit-animation: fadein 2s;
+	/* Mozilla */	
+	-moz-animation-name: fadein;
+	-moz-animation: fadein 2s;
+	/* Standard syntax */
+	animation-name: fadein;
+	animation: fadein 2s;
+	
+}
+.fadeinAnimObj2 {
+	position: relative;
+	/* Chrome, Safari*/
+	-webkit-animation-name: fadein;
+	-webkit-animation: fadein 4s;
+	/* Mozilla */	
+	-moz-animation-name: fadein;
+	-moz-animation: fadein 4s;
+	/* Standard syntax */
+	animation-name: fadein;
+	animation: fadein 4s;
+	
+}
+
+/* 
+Define the keyframe and changes
+*/
+
+/* Chrome, Safari */
+@-webkit-keyframes fadein {
+	from { opacity: 0;}
+	to {opacity: 1;}
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+	from { opacity: 0;}
+	to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadein {
+	from { opacity: 0;}
+	to {opacity: 1;}
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
